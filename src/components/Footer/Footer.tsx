@@ -3,7 +3,6 @@ import reactIcon from "../../assets/react-icon.svg";
 import linkedin from "../../assets/linkedin.svg";
 import githubIcon from "../../assets/github.svg";
 import whatsapp from "../../assets/whatsapp.svg";
-import instagramIcon from "../../assets/instagram.svg";
 
 export function Footer() {
   return (
@@ -39,14 +38,6 @@ export function Footer() {
           rel="noreferrer"
         >
           <img src={whatsapp} alt="Whatsapp" />
-        </a>
-
-        <a
-          href="https://www.instagram.com/zulqarnain_sethi_/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <img src={instagramIcon} alt="Instagram" />
         </a>
       </div>
     </Container>

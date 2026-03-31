@@ -72,14 +72,32 @@ export const Container = styled.section`
     }
     
     .hero-image{
-      display: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 4rem;
+      img.profile-photo{
+        width: 260px;
+        height: 260px;
+      }
     }
   }
 
   @media(max-width: 600px){
     margin-top: 35%;
+    .hero-image{
+      img.profile-photo{
+        width: 200px;
+        height: 200px;
+      }
+    }
   }
   @media(max-width: 480px){
     margin-top: 45%;
+    .hero-image{
+      img.profile-photo{
+        width: 180px;
+        height: 180px;
+      }
+    }
   }
 `
