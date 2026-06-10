@@ -25,15 +25,15 @@ export function About() {
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInLeft" delay={0.1 * 1000}>
           <p>
-            I'm a React Native Developer with 2+ years of experience building
-            scalable, high-performance mobile applications using React Native,
-            JavaScript, and modern mobile development practices. I specialize in
-            creating intuitive, responsive user interfaces, integrating RESTful
-            APIs, and implementing third-party services such as Firebase, push
-            notifications, and authentication systems. I have hands-on
-            experience developing apps for both Android and iOS, ensuring smooth
-            performance, clean architecture, and a consistent user experience
-            across platforms.
+            I'm a React Native Developer with 3+ years of experience building
+            and shipping production-ready cross-platform apps for iOS and
+            Android. Currently at 724.ONE, I deliver scalable mobile solutions
+            using Firebase, Supabase, and Node.js. I've shipped 5+ live apps
+            spanning AI-assisted tools, procurement platforms, lending, and
+            e-commerce with active listings on the App Store and Google Play.
+            I focus on clean architecture, REST API integration, state
+            management, and performance optimization across both platforms.
+            I'm available for remote opportunities.
           </p>
         </ScrollAnimation>
         <ScrollAnimation

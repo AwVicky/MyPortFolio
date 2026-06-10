@@ -7,6 +7,7 @@ import linkedin from "../../assets/linkedin.svg";
 import githubIcon from "../../assets/github.svg";
 import whatsapp from "../../assets/whatsapp.svg";
 import Hello from "../../assets/Hello.gif";
+import { WHATSAPP_URL } from "../../constants/contact";
 // import telegram from "../../assets/telegram.svg";
 export function Hero() {
   return (
@@ -24,7 +25,7 @@ export function Hero() {
           <h3>React Native Developer</h3>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.6 * 1000}>
-          <p className="small-resume">2+ Years of Experience</p>
+          <p className="small-resume">3+ Years of Experience</p>
         </ScrollAnimation>
         <ScrollAnimation animateIn="fadeInUp" delay={0.8 * 1000}>
           <BrowserRouter>
@@ -49,11 +50,7 @@ export function Hero() {
               >
                 <img src={githubIcon} alt="GitHub" />
               </a>
-            <a
-              href="https://api.whatsapp.com/send/?phone=%2B923046566515&text=Hello+Zulqarnain"
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
               <img src={whatsapp} alt="Whatsapp" />
             </a>
             {/* <a

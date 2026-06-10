@@ -35,8 +35,14 @@ export function Header() {
           <NavHashLink smooth to="#about" onClick={closeMenu}>
             About me
           </NavHashLink>
+          <NavHashLink smooth to="#experience" onClick={closeMenu}>
+            Experience
+          </NavHashLink>
+          <NavHashLink smooth to="#education" onClick={closeMenu}>
+            Education
+          </NavHashLink>
           <NavHashLink smooth to="#project" onClick={closeMenu}>
-            Project
+            Projects
           </NavHashLink>
           <NavHashLink smooth to="#contact" onClick={closeMenu}>
             Contact
@@ -48,7 +54,7 @@ export function Header() {
         <div
           aria-expanded={isActive ? 'true' : 'false'}
           aria-haspopup="true"
-          aria-label={isActive ? 'Fechar menu' : 'Abrir menu'}
+          aria-label={isActive ? 'Close menu' : 'Open menu'}
           className={isActive ? 'menu active' : 'menu'}
           onClick={() => {
             setActive(!isActive)

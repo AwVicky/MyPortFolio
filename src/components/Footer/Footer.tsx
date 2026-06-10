@@ -3,6 +3,7 @@ import reactIcon from "../../assets/react-icon.svg";
 import linkedin from "../../assets/linkedin.svg";
 import githubIcon from "../../assets/github.svg";
 import whatsapp from "../../assets/whatsapp.svg";
+import { WHATSAPP_URL } from "../../constants/contact";
 
 export function Footer() {
   return (
@@ -32,11 +33,7 @@ export function Footer() {
         >
           <img src={githubIcon} alt="GitHub" />
         </a>
-        <a
-          href="https://api.whatsapp.com/send/?phone=%2B923046566515&text=Hello+Zulqarnain"
-          target="_blank"
-          rel="noreferrer"
-        >
+        <a href={WHATSAPP_URL} target="_blank" rel="noreferrer">
           <img src={whatsapp} alt="Whatsapp" />
         </a>
       </div>

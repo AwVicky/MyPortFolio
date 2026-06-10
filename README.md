@@ -118,7 +118,7 @@ My_Portfolio/
 - Name, title, GitHub/LinkedIn buttons, WhatsApp, Resume download
 
 ### About
-- Bio: 2+ years React Native experience
+- Bio: 3+ years React Native experience
 - 15 animated skills (float + hover zoom):
   React Native, React JS, JavaScript, TypeScript, Redux, Firebase,
   Android, iOS, Node.js, Express, MongoDB, Stripe, Git, Supabase, RevenueCat

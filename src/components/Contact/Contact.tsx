@@ -8,8 +8,8 @@ export function Contact() {
     <Container id="contact">
       <header>
         <h2>Contact</h2>
-        <p>Ready to get started on your project? </p>
-        <p>Contact me now for a Free consultation.</p>
+        <p>Ready to ship or scale a mobile app?</p>
+        <p>Contact me for a free consultation on React Native for iOS and Android.</p>
       </header>
       <div className="contacts">
         <div>

