@@ -1,7 +1,7 @@
 import { BrowserRouter } from "react-router-dom";
 import { Container } from "./styles";
 import ScrollAnimation from "react-animate-on-scroll";
-import ProfilePhoto from "../../assets/waqar-profile.jpg";
+import ProfilePhoto from "../../assets/waqar-profile.png";
 import { NavHashLink } from "react-router-hash-link";
 import linkedin from "../../assets/linkedin.svg";
 import githubIcon from "../../assets/github.svg";
